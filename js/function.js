@@ -55,17 +55,16 @@ return parseInt(result, 10);
 //имяФункции('агент 007');           // 7
 //имяФункции('а я томат');           // NaN
 
-
+/*
 const myPadStart = (string, minLength, pad) => {
 let result = string;
 while (result.length < minLength) {
 const newResultLength = result.length + pad.length;
 const actualPad = newResultLength <=minLength ? pad : pad.slice(0, minLength - newresultLength);
 result = actualPad + result;
+}return:result;
 }
-return:result;
-}
-
+*/
 
 // Добавочный символ использован один раз
 //имяФункции('1', 2, '0');      // '01'
