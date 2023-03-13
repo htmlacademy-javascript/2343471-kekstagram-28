@@ -5,10 +5,11 @@
 // Строка длиннее 10 символов
 //имяФункции('проверяемая строка', 10); // false
 
-const isLessOrNumber =(string, length) => string.length <= length;*/
-const isLessOrNumber = (string, length) => {
+
+/*const isCheck =(string, length) => string.length <= length;
+const isCheck = (string, length) => {
 return string.length <= length;
-}
+}*/
 
 
 const isStringLess = (string, length) => {
@@ -67,7 +68,8 @@ while (result.length < minLength) {
 const newResultLength = result.length + pad.length;
 const actualPad = newResultLength <=minLength ? pad : pad.slice(0, minLength - newresultLength);
 result = actualPad + result;
-}return:result;
+}
+return;
 }
 
 
