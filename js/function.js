@@ -4,16 +4,12 @@
 //имяФункции('проверяемая строка', 18); // true
 // Строка длиннее 10 символов
 //имяФункции('проверяемая строка', 10); // false
-
-
 /*
 const isCheck =(string, length) => string.length <= length;
 const isCheck = (string, length) => {
 return string.length <= length;
 }
 */
-
-
 /*const isStringLess = (string, length) => {
 if (string.length <= length) {
 return true;
@@ -22,17 +18,12 @@ return false;}
 }
 isStringLess('проверяемая строка', 20);
 */
-
-
-
-
 // Строка является палиндромом
 //имяФункции('топот'); // true
 // Несмотря на разный регистр, тоже палиндром
 //имяФункции('ДовОд'); // true
 // Это не палиндром
 //имяФункции('Кекс');  // false
-
 /*
 const isPalindrom = (string) => {
 const trmpString = spring.toLowercase();
@@ -44,11 +35,8 @@ console.log(reverseString);
 return tempString === reverseString;
 }
 */
-
 // Это палиндром
 //имяФункции('Лёша на полке клопа нашёл '); // true
-
-
 /*
 const extractNumber=(string) => {
 let result = '';
@@ -59,16 +47,11 @@ for (let i=0; i<spring.length; i++) {
 return parseInt(result, 10);
 }
 */
-
-
 //имяФункции('2023 год');            // 2023
 //имяФункции('ECMAScript 2022');     // 2022
 //имяФункции('1 кефир, 0.5 батона'); // 105
 //имяФункции('агент 007');           // 7
 //имяФункции('а я томат');           // NaN
-
-
-
 /*
 const myPadStart = (string, minLength, pad) => {
 let result = string;
@@ -79,7 +62,6 @@ result = actualPad + result;
 }return;
 }
 */
-
 /*
 Добавочный символ использован один раз
 имяФункции('1', 2, '0');      // '01'
