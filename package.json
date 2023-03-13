@@ -20,6 +20,6 @@
   "scripts": {
     "start": "browser-sync start --server --no-ui --files \"js/**/*.js\"",
     "lint": "eslint js/"
-    "lint:fix": "eslint --fix.js/"
+    "lint:fix": "eslint --fix js/"
   }
 }
