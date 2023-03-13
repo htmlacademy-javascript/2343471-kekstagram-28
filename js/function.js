@@ -4,19 +4,20 @@
 //имяФункции('проверяемая строка', 18); // true
 // Строка длиннее 10 символов
 //имяФункции('проверяемая строка', 10); // false
-/*const isLessOrNumber =(string, length) => string.length <= length;*/
-/*const isLessOrNumber = (string, length) => {
-return string.length <= length;
-}*/
 
-/*const isStringLess = (string, length) => {
+const isLessOrNumber =(string, length) => string.length <= length;*/
+const isLessOrNumber = (string, length) => {
+return string.length <= length;
+}
+
+
+const isStringLess = (string, length) => {
 if (string.length <= length) {
 return true;
 } else{
 return false;}
 }
 isStringLess('проверяемая строка', 20);
-*/
 
 
 
@@ -28,7 +29,8 @@ isStringLess('проверяемая строка', 20);
 // Это не палиндром
 //имяФункции('Кекс');  // false
 
-/*const isPalindrom = (string) => {
+
+const isPalindrom = (string) => {
 const trmpString = spring.toLowercase();
 let reverseString ='';
 for(let i = tempSpring.length - 1;i >= 0; i--) {
@@ -37,13 +39,13 @@ reverseString+=tempString.at(i);
 console.log(reverseString);
 return tempString === reverseString;
 }
-*/
+
 // Это палиндром
 //имяФункции('Лёша на полке клопа нашёл '); // true
 
 
 
-/*const extractNumber=(string) => {
+const extractNumber=(string) => {
 let result = '';
 for (let i=0; i<spring.length; i++) {
   if(!Number.isNaN(parseInt(string.at(i), 10))){
@@ -51,14 +53,14 @@ for (let i=0; i<spring.length; i++) {
 }
 return parseInt(result, 10);
 }
+
 //имяФункции('2023 год');            // 2023
 //имяФункции('ECMAScript 2022');     // 2022
 //имяФункции('1 кефир, 0.5 батона'); // 105
 //имяФункции('агент 007');           // 7
 //имяФункции('а я томат');           // NaN
-*/
 
-/*
+
 const myPadStart = (string, minLength, pad) => {
 let result = string;
 while (result.length < minLength) {
@@ -67,7 +69,7 @@ const actualPad = newResultLength <=minLength ? pad : pad.slice(0, minLength - n
 result = actualPad + result;
 }return:result;
 }
-*/
+
 
 // Добавочный символ использован один раз
 //имяФункции('1', 2, '0');      // '01'
