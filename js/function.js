@@ -11,11 +11,11 @@ return string.length <= length;
 }
 */
 
-const isStringLess = (string, length) => {
-if (string.length <= length) {
+const isStringLess = ( string, length ) => {
+if ( string.length <= length ) {
 return true;
 } else {
-return false;
+ return false;
 }
 }
 isStringLess ('проверяемая строка', 20);
@@ -27,27 +27,27 @@ isStringLess ('проверяемая строка', 20);
 // Это не палиндром
 //имяФункции('Кекс');  // false
 
-const isPalindrom = (string) => {
-const tempString = string.toLowercase();
+const isPalindrom = ( string ) => {
+const tempString = string.toLowercase ();
 let reverseString = '';
-for (let i = tempString.length - 1; i >= 0; i--) {
-reverseString += tempString.at(i);
+for ( let i = tempString.length - 1; i >= 0; i-- ) {
+reverseString += tempString.at (i);
 }
-console.log (reverseString);
+console.log ( reverseString );
 return tempString === reverseString;
 }
-const result= isPalindrom('');
+const result = isPalindrom ('');
 
 // Это палиндром
 //имяФункции('Лёша на полке клопа нашёл '); // true
 
-const extractNumber = (string) => {
+const extractNumber = ( string ) => {
 let result = '';
-for (let i = 0; i < spring.length; i++) {
-  if (!Number.isNaN (parseInt (string.at(i), 10))) {
+for ( let i = 0; i < spring.length; i++ ) {
+  if ( !Number.isNaN ( parseInt ( string.at(i), 10 ))) {
   }
 }
-return parseInt (result, 10);
+return parseInt ( result, 10 );
 }
 
 //имяФункции('2023 год');            // 2023
@@ -56,11 +56,11 @@ return parseInt (result, 10);
 //имяФункции('агент 007');           // 7
 //имяФункции('а я томат');           // NaN
 
-const myPadStart = (string, minLength, pad) => {
+const myPadStart = ( string, minLength, pad ) => {
 let result = string;
-while (result.length < minLength) {
+while ( result.length < minLength ) {
 const newResultLength = result.length + pad.length;
-const actualPad = newResultLength <=minLength ? pad : pad.slice(0, minLength - newResultLength);
+const actualPad = newResultLength <= minLength ? pad : pad.slice (0, minLength - newResultLength );
 result = actualPad + result;
 }
 return result;
