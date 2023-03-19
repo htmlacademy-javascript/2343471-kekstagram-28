@@ -18,7 +18,7 @@ return true;
 return false;
 }
 }
-isStringLess('проверяемая строка', 20);
+isStringLess ('проверяемая строка', 20);
 
 // Строка является палиндромом
 //имяФункции('топот'); // true
@@ -29,25 +29,25 @@ isStringLess('проверяемая строка', 20);
 
 const isPalindrom = (string) => {
 const tempString = string.toLowercase();
-let reverseString ='';
-for(let i = tempString.length - 1;i >= 0; i--) {
+let reverseString = '';
+for (let i = tempString.length - 1; i >= 0; i--) {
 reverseString += tempString.at(i);
 }
-console.log(reverseString);
+console.log (reverseString);
 return tempString === reverseString;
 }
-const result=isPalindrom('');
+const result= isPalindrom('');
 
 // Это палиндром
 //имяФункции('Лёша на полке клопа нашёл '); // true
 
 const extractNumber = (string) => {
 let result = '';
-for (let i=0; i<spring.length; i++) {
-  if(!Number.isNaN(parseInt(string.at(i), 10))) {
+for (let i = 0; i < spring.length; i++) {
+  if (!Number.isNaN (parseInt (string.at(i), 10))) {
   }
 }
-return parseInt(result, 10);
+return parseInt (result, 10);
 }
 
 //имяФункции('2023 год');            // 2023
