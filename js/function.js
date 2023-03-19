@@ -14,8 +14,9 @@ return string.length <= length;
 const isStringLess = (string, length) => {
 if (string.length <= length) {
 return true;
-} else
+} else {
 return false;
+}
 }
 isStringLess('проверяемая строка', 20);
 
