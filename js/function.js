@@ -36,20 +36,21 @@ const isPalindrom = (string) => {
   //console.log (reverseString);
   return tempString === reverseString;
 };
-//const result = isPalindrom ('');
+const result = isPalindrom ('');
 
 // Это палиндром
 //имяФункции('Лёша на полке клопа нашёл '); // true
 
 const extractNumber = (string) => {
-  let result='';
+  let result= '';
   for (let i = 0; i < string.length; i++) {
     if (!Number.isNaN(parseInt(string.at(i), 10))) {
-    result += string.at(i);
+      result += string.at(i);
     }
   }
   return parseInt (result, 10);
 };
+extractNumber ('2023 год');
 
 //имяФункции('2023 год');            // 2023
 //имяФункции('ECMAScript 2022');     // 2022
@@ -66,6 +67,7 @@ const myPadStart = (string, minLength, pad) => {
   }
   return result;
 };
+myPadStart ('q', 4, 'we');
 
 /*
 Добавочный символ использован один раз
