@@ -36,13 +36,13 @@ const isPalindrom = (string) => {
   //console.log (reverseString);
   return tempString === reverseString;
 };
-const result = isPalindrom ('');
+isPalindrom ('');
 
 // Это палиндром
 //имяФункции('Лёша на полке клопа нашёл '); // true
 
 const extractNumber = (string) => {
-  let result= '';
+  let result = '';
   for (let i = 0; i < string.length; i++) {
     if (!Number.isNaN(parseInt(string.at(i), 10))) {
       result += string.at(i);
