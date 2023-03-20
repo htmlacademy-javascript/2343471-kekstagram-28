@@ -11,13 +11,13 @@ return string.length <= length;
 }
 */
 
-const isStringLess = ( string, length ) => {
-if ( string.length <= length ) {
-return true;
-} else {
- return false;
-}
-}
+const isStringLess = (string, length) => {
+  if (string.length <= length) {
+    return true;
+  } else {
+    return false;
+  }
+};
 isStringLess ('проверяемая строка', 20);
 
 // Строка является палиндромом
@@ -27,22 +27,22 @@ isStringLess ('проверяемая строка', 20);
 // Это не палиндром
 //имяФункции('Кекс');  // false
 
-const isPalindrom = ( string ) => {
-const tempString = string.toLowercase ();
-let reverseString = '';
-for ( let i = tempString.length - 1; i >= 0; i-- ) {
-reverseString += tempString.at (i);
-}
-console.log ( reverseString );
-return tempString === reverseString;
-}
+const isPalindrom = (string) => {
+  const tempString = string.toLowercase ();
+  let reverseString = '';
+  for (let i = tempString.length - 1; i >= 0; i--) {
+    reverseString += tempString.at (i);
+  }
+ console.log (reverseString);
+  return tempString === reverseString;
+};
 const result = isPalindrom ('');
 
 // Это палиндром
 //имяФункции('Лёша на полке клопа нашёл '); // true
 
-const extractNumber = ( string ) => {
-let result = '';
+const extractNumber = (string) => {
+  let result = '';
 for ( let i = 0; i < spring.length; i++ ) {
   if ( !Number.isNaN ( parseInt ( string.at(i), 10 ))) {
   }
