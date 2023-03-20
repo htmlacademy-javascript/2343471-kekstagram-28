@@ -28,15 +28,15 @@ isStringLess ('проверяемая строка', 20);
 //имяФункции('Кекс');  // false
 
 const isPalindrom = (string) => {
-  const tempString = string.toLowercase ();
+  const tempString = string.toLowerCase ();
   let reverseString = '';
   for (let i = tempString.length - 1; i >= 0; i--) {
-    reverseString += tempString.at (i);
+    reverseString += tempString.at(i);
   }
- console.log (reverseString);
+  //console.log (reverseString);
   return tempString === reverseString;
 };
-const result = isPalindrom ('');
+//const result = isPalindrom ('');
 
 // Это палиндром
 //имяФункции('Лёша на полке клопа нашёл '); // true
@@ -45,6 +45,7 @@ const extractNumber = (string) => {
   let result='';
   for (let i = 0; i < string.length; i++) {
     if (!Number.isNaN(parseInt(string.at(i), 10))) {
+    result += string.at(i);
     }
   }
   return parseInt (result, 10);
