@@ -42,13 +42,13 @@ const result = isPalindrom ('');
 //имяФункции('Лёша на полке клопа нашёл '); // true
 
 const extractNumber = (string) => {
-  let result = '';
-for ( let i = 0; i < spring.length; i++ ) {
-  if ( !Number.isNaN ( parseInt ( string.at(i), 10 ))) {
+  let result='';
+  for (let i = 0; i < string.length; i++) {
+    if (!Number.isNaN(parseInt(string.at(i), 10))) {
+    }
   }
-}
-return parseInt ( result, 10 );
-}
+  return parseInt (result, 10);
+};
 
 //имяФункции('2023 год');            // 2023
 //имяФункции('ECMAScript 2022');     // 2022
@@ -56,15 +56,15 @@ return parseInt ( result, 10 );
 //имяФункции('агент 007');           // 7
 //имяФункции('а я томат');           // NaN
 
-const myPadStart = ( string, minLength, pad ) => {
-let result = string;
-while ( result.length < minLength ) {
-const newResultLength = result.length + pad.length;
-const actualPad = newResultLength <= minLength ? pad : pad.slice (0, minLength - newResultLength);
-result = actualPad + result;
-}
-return result;
-}
+const myPadStart = (string, minLength, pad) => {
+  let result = string;
+  while (result.length < minLength) {
+    const newResultLength = result.length + pad.length;
+    const actualPad = newResultLength <= minLength ? pad : pad.slice (0, minLength - newResultLength);
+    result = actualPad + result;
+  }
+  return result;
+};
 
 /*
 Добавочный символ использован один раз
